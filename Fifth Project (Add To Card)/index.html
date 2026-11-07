@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Shop</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Shop Title -->
+        <header>
+            <h2>
+                <i class="fa-solid fa-shop"></i>
+                My Shop
+            </h2>
+        </header>
+
+        <main>
+
+            <!-- Product Section -->
+            <section class="product-section">
+
+                <div class="section-title">
+                    <h3>Laptops</h3>
+                    <span id="productCount">4 Products</span>
+                </div>
+
+                <!-- API Products -->
+                <div id="productList" class="product-list">
+
+                    <p class="loading">
+                        Loading laptops...
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Cart Section -->
+            <aside class="cart">
+
+                <div class="cart-header">
+
+                    <h2>Cart List</h2>
+
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span id="cartCount">
+                            0
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Cart Items -->
+                <div id="cartItems">
+
+                    <p class="empty-cart">
+                        Your cart is empty
+                    </p>
+
+                </div>
+
+
+                <!-- Cart Total -->
+                <div class="cart-total">
+
+                    <h3>
+                        Total:
+                    </h3>
+
+                    <h3 id="totalPrice">
+                        $0.00
+                    </h3>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
